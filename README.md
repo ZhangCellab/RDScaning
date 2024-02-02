@@ -36,3 +36,9 @@ processed 24497 tokens with 960 phrases; found: 983 phrases; correct: 852.
 accuracy:  98.49%; precision:  86.67%; recall:  88.75%; FB1:  87.70
              MISC: precision:  86.67%; recall:  88.75%; FB1:  87.70  983
 ``` 
+#### Supplementary Material
+
+If you want to get each token in the sentence, you can use `./ner_token.py`:
+`python ner_token.py -i/--input [input_file]`
+- **input_file:** route to the file containing the sentence in **CSV** format for which the token is to be obtained.
+After executing the command, you will get the file of each token in the sentence: **ner_token.csv**.
