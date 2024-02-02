@@ -22,7 +22,7 @@ def process_file(input_file):
 
     MAX_CHARS_WORD = 22
 
-    with open("test_token.csv", 'w', newline='', encoding='utf-8-sig') as csv_file:
+    with open("ner_token.csv", 'w', newline='', encoding='utf-8-sig') as csv_file:
         writer = csv.writer(csv_file)
 
         for count in range(len(PMID)):
