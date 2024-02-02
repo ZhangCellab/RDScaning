@@ -29,6 +29,7 @@ run `python run_ner.py -i/--input [input_file] -o/--output [output_file]` in com
 - An example dataset is given in **example_ner.txt**.
 
 After executing the command, you will get two files: **eval_results.txt** (token-level evaluation result) and **ner_result_conll.csv** (actual and predicted labels for each token).
+
 Use `./conlleval.pl` for entity-level exact match evaluation results.
 The entity-level results for the NCBI disease corpus will be like:
 ```
