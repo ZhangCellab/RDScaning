@@ -40,5 +40,5 @@ accuracy:  98.49%; precision:  86.67%; recall:  88.75%; FB1:  87.70
 
 If you want to get each token in the sentence, you can run `python ner_token.py -i/--input [input_file]` in command
 - **input_file:** route to the file containing the sentence in **CSV** format for which the token is to be obtained.
-
+- An example dataset is given in **example_token.csv**.
 After executing the command, you will get the file of each token in the sentence: **ner_token.csv**.
