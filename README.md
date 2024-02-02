@@ -15,8 +15,24 @@ We provide the weights of two pre-trained models after fine-tuning, and their do
 
 run `python run_classification.py -i/--input [input_file] -o/--output [output_file]` in command
 
-- **input_file:** route to your file containing peptides to be predicted in **CSV** format.
+- **input_file:** route to your file containing sentences to be predicted in **CSV** format.
 - **output_file:** route to your result file containing prediction results in **Directory**.
-- An example dataset is given in **example_classication.csv**
+- An example dataset is given in **example_classication.csv**.
   
 After executing the command, you will get two files: **eval_results.txt** (evaluation result) and **output.csv** (the probability of each sentence being predicted to be positive).
+#### Named Entity Recognition
+
+run `python run_ner.py -i/--input [input_file] -o/--output [output_file]` in command
+
+- **input_file:** route to your file containing tokens to be predicted in **TXT** format.
+- **output_file:** route to your result file containing prediction results in **Directory**.
+- An example dataset is given in **example_ner.txt**.
+
+After executing the command, you will get two files: **eval_results.txt** (token-level evaluation result) and **ner_result_conll.csv** (actual and predicted labels for each token).
+Use `./conlleval.pl` for entity-level exact match evaluation results.
+The entity-level results for the NCBI disease corpus will be like:
+```
+processed 24497 tokens with 960 phrases; found: 983 phrases; correct: 852.
+accuracy:  98.49%; precision:  86.67%; recall:  88.75%; FB1:  87.70
+             MISC: precision:  86.67%; recall:  88.75%; FB1:  87.70  983
+``` 
