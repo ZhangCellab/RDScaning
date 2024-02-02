@@ -1,4 +1,4 @@
-![image](https://github.com/ZhangCellab/RDScaning/assets/131874085/cd140885-5fdb-4d09-a854-5f0ec87c7623)# RDScanning
+# RDScanning
 ### Download:
 We provide the weights of two pre-trained models after fine-tuning, and their downloads and descriptions are provided below:
 * **[model-TC](https://cellknowledge.com.cn/RDScanning/model1-TC.rar)** - fine-tuned BioBERT V1.1 model weights based on RNA and disease sentence classification tasks
